@@ -1,4 +1,4 @@
-19108249788986910
+19113089914667910
 10118241001RLF
 10118241001RLF
 10118241-001RLF-2
@@ -82025,6 +82025,27 @@ RF-SMD_U.FL-R-SMT-1(80)
 0
 3
 3
+mybays_connector
+R_Array_4x0603_jump_0.1
+Thick Film Chip Resistor Array, Wave soldering, Vishay CRA06P (see cra06p.pdf)
+resistor array
+0
+8
+8
+mybays_connector
+R_Array_4x0603_jump_0.2
+Thick Film Chip Resistor Array, Wave soldering, Vishay CRA06P (see cra06p.pdf)
+resistor array
+0
+8
+8
+mybays_connector
+R_Array_Concave_4x0603
+Thick Film Chip Resistor Array, Wave soldering, Vishay CRA06P (see cra06p.pdf)
+resistor array
+0
+8
+8
 mybays_connector
 S_2.54_2_5P_JX
 

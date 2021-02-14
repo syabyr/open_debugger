@@ -191,19 +191,6 @@ Text GLabel 3350 2700 2    50   Input ~ 0
 PA1
 Text GLabel 3350 2600 2    50   Input ~ 0
 PA0
-$Comp
-L Device:Crystal_GND24_Small Y1
-U 1 1 6021158B
-P 1450 1950
-F 0 "Y1" V 1404 2094 50  0000 L CNN
-F 1 "Crystal_GND24_Small" V 1100 1050 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 1450 1950 50  0001 C CNN
-F 3 "~" H 1450 1950 50  0001 C CNN
-	1    1450 1950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1450 1850 1850 1850
 Wire Wire Line
 	1850 1850 1850 1900
 Wire Wire Line
@@ -212,8 +199,6 @@ Wire Wire Line
 	1950 2000 1850 2000
 Wire Wire Line
 	1850 2000 1850 2050
-Wire Wire Line
-	1850 2050 1450 2050
 $Comp
 L Device:C C1
 U 1 1 602141F3
@@ -247,25 +232,6 @@ F 3 "" H 900 1950 50  0001 C CNN
 	1    900  1950
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 60216A2F
-P 1650 1950
-F 0 "#PWR0106" H 1650 1700 50  0001 C CNN
-F 1 "GND" V 1655 1822 50  0000 R CNN
-F 2 "" H 1650 1950 50  0001 C CNN
-F 3 "" H 1650 1950 50  0001 C CNN
-	1    1650 1950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1550 1950 1650 1950
-Wire Wire Line
-	1350 1850 1450 1850
-Connection ~ 1450 1850
-Wire Wire Line
-	1450 2050 1350 2050
-Connection ~ 1450 2050
 Wire Wire Line
 	900  1950 1000 1950
 Wire Wire Line
@@ -273,8 +239,6 @@ Wire Wire Line
 Wire Wire Line
 	1000 1850 1000 1950
 Connection ~ 1000 1950
-Wire Wire Line
-	1000 1950 1350 1950
 Wire Wire Line
 	1050 2050 1000 2050
 Wire Wire Line
@@ -522,7 +486,7 @@ U 1 1 60279B50
 P 3950 6050
 F 0 "C4" V 3900 5950 50  0000 C CNN
 F 1 "C" V 4000 5950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 5900 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder" H 3988 5900 50  0001 C CNN
 F 3 "~" H 3950 6050 50  0001 C CNN
 	1    3950 6050
 	-1   0    0    1   
@@ -544,7 +508,7 @@ U 1 1 6027A233
 P 4950 6050
 F 0 "C6" V 4900 5950 50  0000 C CNN
 F 1 "C" V 5000 5950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4988 5900 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder" H 4988 5900 50  0001 C CNN
 F 3 "~" H 4950 6050 50  0001 C CNN
 	1    4950 6050
 	-1   0    0    1   
@@ -1085,7 +1049,7 @@ U 1 1 603F37A1
 P 5700 3050
 F 0 "RN1" H 5700 3417 50  0000 C CNN
 F 1 "RTA03-4D391JTP" H 5700 3326 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_4x0603" H 5700 3050 50  0001 C CNN
+F 2 "mybays_connector:R_Array_4x0603_jump_0.2" H 5700 3050 50  0001 C CNN
 F 3 "" H 5700 3050 50  0001 C CNN
 	1    5700 3050
 	1    0    0    -1  
@@ -1096,7 +1060,7 @@ U 1 1 603F58CB
 P 6550 3050
 F 0 "RN3" H 6550 3417 50  0000 C CNN
 F 1 "RTA03-4D391JTP" H 6550 3326 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_4x0603" H 6550 3050 50  0001 C CNN
+F 2 "mybays_connector:R_Array_4x0603_jump_0.2" H 6550 3050 50  0001 C CNN
 F 3 "" H 6550 3050 50  0001 C CNN
 	1    6550 3050
 	1    0    0    -1  
@@ -1107,7 +1071,7 @@ U 1 1 603F652E
 P 5700 3800
 F 0 "RN2" H 5700 4167 50  0000 C CNN
 F 1 "RTA03-4D391JTP" H 5700 4076 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_4x0603" H 5700 3800 50  0001 C CNN
+F 2 "mybays_connector:R_Array_4x0603_jump_0.2" H 5700 3800 50  0001 C CNN
 F 3 "" H 5700 3800 50  0001 C CNN
 	1    5700 3800
 	1    0    0    -1  
@@ -1118,7 +1082,7 @@ U 1 1 603F7B6E
 P 6550 3800
 F 0 "RN4" H 6550 4167 50  0000 C CNN
 F 1 "RTA03-4D391JTP" H 6550 4076 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Concave_4x0603" H 6550 3800 50  0001 C CNN
+F 2 "mybays_connector:R_Array_4x0603_jump_0.2" H 6550 3800 50  0001 C CNN
 F 3 "" H 6550 3800 50  0001 C CNN
 	1    6550 3800
 	1    0    0    -1  
@@ -1151,4 +1115,53 @@ Text GLabel 9950 3700 2    50   Input ~ 0
 TXD
 Text GLabel 9950 3800 2    50   Input ~ 0
 RXD
+$Comp
+L Device:Crystal_Small Y1
+U 1 1 6028BE64
+P 1450 1950
+F 0 "Y1" V 1404 2038 50  0000 L CNN
+F 1 "Crystal_Small" V 1495 2038 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_5032-2Pin_5.0x3.2mm" H 1450 1950 50  0001 C CNN
+F 3 "~" H 1450 1950 50  0001 C CNN
+	1    1450 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 1850 1450 1850
+Wire Wire Line
+	1350 2050 1450 2050
+Connection ~ 1450 1850
+Wire Wire Line
+	1450 1850 1850 1850
+Connection ~ 1450 2050
+Wire Wire Line
+	1450 2050 1850 2050
+$Comp
+L power:VBUS #PWR0106
+U 1 1 6037F5B6
+P 9000 1950
+F 0 "#PWR0106" H 9000 1800 50  0001 C CNN
+F 1 "VBUS" H 9015 2123 50  0000 C CNN
+F 2 "" H 9000 1950 50  0001 C CNN
+F 3 "" H 9000 1950 50  0001 C CNN
+	1    9000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0114
+U 1 1 60380603
+P 9350 3400
+F 0 "#PWR0114" H 9350 3250 50  0001 C CNN
+F 1 "VBUS" H 9365 3573 50  0000 C CNN
+F 2 "" H 9350 3400 50  0001 C CNN
+F 3 "" H 9350 3400 50  0001 C CNN
+	1    9350 3400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9350 3400 9400 3400
+Wire Wire Line
+	9000 1950 9000 2000
+Wire Wire Line
+	9000 2000 9050 2000
 $EndSCHEMATC
