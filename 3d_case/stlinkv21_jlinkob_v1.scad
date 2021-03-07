@@ -80,7 +80,7 @@ module Base()
         translate([pcb_length+dc5_width/2+0.5,pcb_width/2,(dc5_hight+2)/2]) cube([dc5_width+2, dc5_length+Case_Gap, dc5_hight+2],center = true);
         
         //USB-C
-        translate([0, pcb_width/2, (pcb_hight+typec_hight+dc5_hight)/2]) cube([10, typec_width, typec_hight],center = true);
+        translate([0, pcb_width/2, (pcb_hight+typec_hight+dc5_hight)/2]) cube([10, typec_width+0.15, typec_hight+0.15],center = true);
         
 	}
 		//Mounting pegs
