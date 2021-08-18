@@ -28,19 +28,6 @@ F 3 "" H 1400 3250 50  0001 C CNN
 $EndComp
 $Comp
 L jlinkob_hs-rescue:ATSAM3U4CA-AU-mybays U?.?
-U 2 1 6042B092
-P 6150 3600
-AR Path="/6042B092" Ref="U?.?"  Part="2" 
-AR Path="/60423994/6042B092" Ref="U?.1"  Part="2" 
-F 0 "U?.1" H 5450 5075 50  0000 C CNN
-F 1 "ATSAM3U4CA-AU" H 5450 4984 50  0000 C CNN
-F 2 "mybays:QFP50P1600X1600X160-100N" H 6150 3600 50  0001 C CNN
-F 3 "" H 6150 3600 50  0001 C CNN
-	2    6150 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L jlinkob_hs-rescue:ATSAM3U4CA-AU-mybays U?.?
 U 3 1 6042B098
 P 8500 4050
 AR Path="/6042B098" Ref="U?.?"  Part="3" 
@@ -565,7 +552,7 @@ U 1 1 604B4B1D
 P 6600 3000
 F 0 "TP1" V 6600 3188 50  0000 L CNN
 F 1 "TestPoint" V 6645 3188 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 6800 3000 50  0001 C CNN
+F 2 "mybays_connector:TestPoint_0.5" H 6800 3000 50  0001 C CNN
 F 3 "~" H 6800 3000 50  0001 C CNN
 	1    6600 3000
 	0    1    1    0   
@@ -689,8 +676,6 @@ Wire Wire Line
 Connection ~ 6550 4200
 Wire Wire Line
 	6550 4200 6550 4250
-NoConn ~ 6350 2400
-NoConn ~ 6350 2500
 $Comp
 L Device:Crystal_GND24 Y1
 U 1 1 604EF309
@@ -832,23 +817,14 @@ $EndComp
 $Comp
 L power:GND #PWR0120
 U 1 1 6059E1B8
-P 5300 7200
-F 0 "#PWR0120" H 5300 6950 50  0001 C CNN
-F 1 "GND" H 5305 7027 50  0000 C CNN
-F 2 "" H 5300 7200 50  0001 C CNN
-F 3 "" H 5300 7200 50  0001 C CNN
-	1    5300 7200
+P 5400 7200
+F 0 "#PWR0120" H 5400 6950 50  0001 C CNN
+F 1 "GND" H 5405 7027 50  0000 C CNN
+F 2 "" H 5400 7200 50  0001 C CNN
+F 3 "" H 5400 7200 50  0001 C CNN
+	1    5400 7200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5300 7100 5300 7150
-Wire Wire Line
-	5400 7100 5400 7150
-Wire Wire Line
-	5400 7150 5300 7150
-Connection ~ 5300 7150
-Wire Wire Line
-	5300 7150 5300 7200
 NoConn ~ 2150 5450
 NoConn ~ 2150 5550
 NoConn ~ 2150 6350
@@ -883,17 +859,6 @@ Text GLabel 5750 6700 2    50   Input ~ 0
 USB_FS_DP
 Text GLabel 5750 6800 2    50   Input ~ 0
 USB_FS_DM
-$Comp
-L Power_Protection:PRTR5V0U2X D1
-U 1 1 605F915C
-P 3300 6700
-F 0 "D1" H 3500 6950 50  0000 L CNN
-F 1 "PRTR5V0U2X" H 3100 6550 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-143" H 3360 6700 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 3360 6700 50  0001 C CNN
-	1    3300 6700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C18
 U 1 1 6060F0E5
@@ -1273,7 +1238,7 @@ U 1 1 60764A46
 P 10200 5750
 F 0 "C19" H 10200 5850 50  0000 L CNN
 F 1 "10u" H 10150 5650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10238 5600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 10238 5600 50  0001 C CNN
 F 3 "~" H 10200 5750 50  0001 C CNN
 	1    10200 5750
 	1    0    0    -1  
@@ -1302,40 +1267,6 @@ F 3 "" H 2350 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2350 5200 2350 5250
-$Comp
-L power:GND #PWR0134
-U 1 1 6062E233
-P 3300 7250
-F 0 "#PWR0134" H 3300 7000 50  0001 C CNN
-F 1 "GND" H 3305 7077 50  0000 C CNN
-F 2 "" H 3300 7250 50  0001 C CNN
-F 3 "" H 3300 7250 50  0001 C CNN
-	1    3300 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 7200 3300 7250
-$Comp
-L power:VBUS #PWR0135
-U 1 1 6063D1F8
-P 3300 6150
-F 0 "#PWR0135" H 3300 6000 50  0001 C CNN
-F 1 "VBUS" H 3315 6323 50  0000 C CNN
-F 2 "" H 3300 6150 50  0001 C CNN
-F 3 "" H 3300 6150 50  0001 C CNN
-	1    3300 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 6150 3300 6200
-Wire Wire Line
-	3850 6700 3800 6700
-Text GLabel 3850 6700 2    50   Input ~ 0
-USB_HS_DP
-Wire Wire Line
-	2750 6700 2800 6700
-Text GLabel 2750 6700 0    50   Input ~ 0
-USB_HS_DM
 Wire Wire Line
 	5750 6500 5700 6500
 $Comp
@@ -1352,17 +1283,6 @@ $EndComp
 Wire Wire Line
 	5750 6450 5750 6500
 $Comp
-L Device:C C25
-U 1 1 606A897C
-P 6450 5750
-F 0 "C25" H 6450 5850 50  0000 L CNN
-F 1 "100n" H 6400 5650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6488 5600 50  0001 C CNN
-F 3 "~" H 6450 5750 50  0001 C CNN
-	1    6450 5750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0137
 U 1 1 606A8982
 P 6450 6000
@@ -1371,50 +1291,6 @@ F 1 "GND" H 6455 5827 50  0000 C CNN
 F 2 "" H 6450 6000 50  0001 C CNN
 F 3 "" H 6450 6000 50  0001 C CNN
 	1    6450 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C24
-U 1 1 606A8988
-P 6300 5750
-F 0 "C24" H 6300 5850 50  0000 L CNN
-F 1 "100n" H 6250 5650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6338 5600 50  0001 C CNN
-F 3 "~" H 6300 5750 50  0001 C CNN
-	1    6300 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C23
-U 1 1 606A898E
-P 6150 5750
-F 0 "C23" H 6150 5850 50  0000 L CNN
-F 1 "100n" H 6100 5650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6188 5600 50  0001 C CNN
-F 3 "~" H 6150 5750 50  0001 C CNN
-	1    6150 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C22
-U 1 1 606A8994
-P 6000 5750
-F 0 "C22" H 6000 5850 50  0000 L CNN
-F 1 "100n" H 5950 5650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6038 5600 50  0001 C CNN
-F 3 "~" H 6000 5750 50  0001 C CNN
-	1    6000 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C21
-U 1 1 606A899A
-P 5850 5750
-F 0 "C21" H 5850 5850 50  0000 L CNN
-F 1 "100n" H 5800 5650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5888 5600 50  0001 C CNN
-F 3 "~" H 5850 5750 50  0001 C CNN
-	1    5850 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1462,17 +1338,6 @@ Wire Wire Line
 Connection ~ 6300 5550
 Wire Wire Line
 	6300 5550 6450 5550
-$Comp
-L Device:C C20
-U 1 1 606A89BA
-P 5700 5750
-F 0 "C20" H 5700 5850 50  0000 L CNN
-F 1 "100n" H 5650 5650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5738 5600 50  0001 C CNN
-F 3 "~" H 5700 5750 50  0001 C CNN
-	1    5700 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5700 5600 5700 5550
 Wire Wire Line
@@ -1521,7 +1386,7 @@ U 1 1 606E145F
 P 4300 4850
 F 0 "U1" H 4300 5092 50  0000 C CNN
 F 1 "LM1117-3.3" H 4300 5001 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223" H 4300 4850 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4300 4850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 4300 4850 50  0001 C CNN
 	1    4300 4850
 	1    0    0    -1  
@@ -1602,4 +1467,46 @@ Wire Wire Line
 Wire Wire Line
 	1250 6800 1250 7050
 Connection ~ 1250 6800
+Wire Wire Line
+	5400 7100 5400 7200
+Wire Wire Line
+	1150 6800 1250 6800
+Text GLabel 1150 6800 0    50   Input ~ 0
+SHIELD
+Text GLabel 5200 7150 0    50   Input ~ 0
+SHIELD
+Wire Wire Line
+	5200 7150 5300 7150
+Wire Wire Line
+	5300 7150 5300 7100
+$Comp
+L Device:Crystal Y2
+U 1 1 61374753
+P 6600 2400
+F 0 "Y2" H 6600 2668 50  0000 C CNN
+F 1 "Crystal" H 6600 2577 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm_HandSoldering" H 6600 2400 50  0001 C CNN
+F 3 "~" H 6600 2400 50  0001 C CNN
+	1    6600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L jlinkob_hs-rescue:ATSAM3U4CA-AU-mybays U?.?
+U 2 1 6042B092
+P 6150 3600
+AR Path="/6042B092" Ref="U?.?"  Part="2" 
+AR Path="/60423994/6042B092" Ref="U?.1"  Part="2" 
+F 0 "U?.1" H 5450 5075 50  0000 C CNN
+F 1 "ATSAM3U4CA-AU" H 5450 4984 50  0000 C CNN
+F 2 "mybays:QFP50P1600X1600X160-100N" H 6150 3600 50  0001 C CNN
+F 3 "" H 6150 3600 50  0001 C CNN
+	2    6150 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2400 6450 2400
+Wire Wire Line
+	6350 2500 6750 2500
+Wire Wire Line
+	6750 2500 6750 2400
 $EndSCHEMATC
