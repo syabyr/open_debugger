@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name jlinkob_hs-rescue)(type Legacy)(uri ${KIPRJMOD}/jlinkob_hs-rescue.lib)(options "")(descr ""))
+)

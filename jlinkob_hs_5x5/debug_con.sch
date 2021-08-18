@@ -1,0 +1,275 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0128
+U 1 1 6045B521
+P 2150 2950
+F 0 "#PWR0128" H 2150 2700 50  0001 C CNN
+F 1 "GND" H 2155 2777 50  0000 C CNN
+F 2 "" H 2150 2950 50  0001 C CNN
+F 3 "" H 2150 2950 50  0001 C CNN
+	1    2150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 6045B549
+P 3550 2700
+F 0 "#PWR0129" H 3550 2450 50  0001 C CNN
+F 1 "GND" V 3555 2572 50  0000 R CNN
+F 2 "" H 3550 2700 50  0001 C CNN
+F 3 "" H 3550 2700 50  0001 C CNN
+	1    3550 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 2700 3550 2700
+Wire Wire Line
+	2150 2950 2150 2900
+Wire Wire Line
+	2150 2900 2200 2900
+$Comp
+L power:+3V3 #PWR0130
+U 1 1 6045C561
+P 2050 2600
+F 0 "#PWR0130" H 2050 2450 50  0001 C CNN
+F 1 "+3V3" V 2065 2728 50  0000 L CNN
+F 2 "" H 2050 2600 50  0001 C CNN
+F 3 "" H 2050 2600 50  0001 C CNN
+	1    2050 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 2600 2200 2600
+$Comp
+L jlinkob_hs-rescue:CORTEX-DEBUGGER_HOST-mybays_connector CON2
+U 1 1 6045D54E
+P 2800 2700
+F 0 "CON2" H 2800 3167 50  0000 C CNN
+F 1 "CORTEX-DEBUGGER_HOST" H 2800 3076 50  0000 C CNN
+F 2 "mybays_connector:debugger_2x05_P1.27mm_Vertical" H 2800 2700 50  0001 C CNN
+F 3 "" H 2800 2700 50  0001 C CNN
+	1    2800 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3450 2800 2    50   Input ~ 0
+PA12
+Text GLabel 3450 2900 2    50   Input ~ 0
+PA11
+Wire Wire Line
+	3400 2800 3450 2800
+Wire Wire Line
+	3400 2900 3450 2900
+Wire Wire Line
+	1150 2700 1700 2700
+Text GLabel 1150 2700 0    50   Input ~ 0
+PA15
+$Comp
+L Device:R_US R5
+U 1 1 604604E5
+P 1500 2600
+F 0 "R5" V 1400 2500 50  0000 C CNN
+F 1 "150" V 1400 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1540 2590 50  0001 C CNN
+F 3 "~" H 1500 2600 50  0001 C CNN
+	1    1500 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 2600 1700 2600
+Wire Wire Line
+	1700 2600 1700 2700
+Connection ~ 1700 2700
+Wire Wire Line
+	1700 2700 2200 2700
+Wire Wire Line
+	1150 2600 1350 2600
+Text GLabel 1150 2600 0    50   Input ~ 0
+PA18
+Wire Wire Line
+	1150 2800 1700 2800
+Text GLabel 1150 2800 0    50   Input ~ 0
+PA22
+$Comp
+L Device:R_US R6
+U 1 1 6046252C
+P 1500 2900
+F 0 "R6" V 1550 2800 50  0000 C CNN
+F 1 "150" V 1550 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1540 2890 50  0001 C CNN
+F 3 "~" H 1500 2900 50  0001 C CNN
+	1    1500 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 2800 1700 2900
+Wire Wire Line
+	1700 2900 1650 2900
+Connection ~ 1700 2800
+Wire Wire Line
+	1700 2800 2200 2800
+Wire Wire Line
+	1150 2900 1350 2900
+Text GLabel 1150 2900 0    50   Input ~ 0
+PA17
+$Comp
+L Device:R_US R7
+U 1 1 6046399C
+P 3700 2400
+F 0 "R7" V 3600 2300 50  0000 C CNN
+F 1 "150" V 3600 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3740 2390 50  0001 C CNN
+F 3 "~" H 3700 2400 50  0001 C CNN
+	1    3700 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 2500 3450 2500
+Wire Wire Line
+	3950 2400 3850 2400
+Wire Wire Line
+	3550 2400 3450 2400
+Wire Wire Line
+	3450 2400 3450 2500
+Connection ~ 3450 2500
+Wire Wire Line
+	3450 2500 3950 2500
+Text GLabel 3950 2500 2    50   Input ~ 0
+PA3
+Text GLabel 3950 2400 2    50   Input ~ 0
+PA4
+Wire Wire Line
+	3400 2600 3950 2600
+Text GLabel 3950 2600 2    50   Input ~ 0
+PA21
+$Comp
+L Device:R_US R3
+U 1 1 604668B8
+P 1450 3900
+F 0 "R3" V 1500 3800 50  0000 C CNN
+F 1 "1k" V 1500 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1490 3890 50  0001 C CNN
+F 3 "~" H 1450 3900 50  0001 C CNN
+	1    1450 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 6046710D
+P 1450 4050
+F 0 "R4" V 1500 3950 50  0000 C CNN
+F 1 "1k" V 1500 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1490 4040 50  0001 C CNN
+F 3 "~" H 1450 4050 50  0001 C CNN
+	1    1450 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 60467795
+P 1850 3900
+F 0 "D2" H 1900 3800 50  0000 C CNN
+F 1 "RED" H 1750 3800 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 1850 3900 50  0001 C CNN
+F 3 "~" H 1850 3900 50  0001 C CNN
+	1    1850 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 6046851A
+P 1850 4050
+F 0 "D3" H 1900 4150 50  0000 C CNN
+F 1 "GREEN" H 1700 4150 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 1850 4050 50  0001 C CNN
+F 3 "~" H 1850 4050 50  0001 C CNN
+	1    1850 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1600 3900 1700 3900
+Wire Wire Line
+	1600 4050 1700 4050
+$Comp
+L power:+3V3 #PWR0131
+U 1 1 6046A147
+P 1250 3850
+F 0 "#PWR0131" H 1250 3700 50  0001 C CNN
+F 1 "+3V3" H 1265 4023 50  0000 C CNN
+F 2 "" H 1250 3850 50  0001 C CNN
+F 3 "" H 1250 3850 50  0001 C CNN
+	1    1250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3850 1250 3900
+Wire Wire Line
+	1250 4050 1300 4050
+Wire Wire Line
+	1300 3900 1250 3900
+Connection ~ 1250 3900
+Wire Wire Line
+	1250 3900 1250 4050
+Wire Wire Line
+	2100 3900 2000 3900
+Wire Wire Line
+	2100 4050 2000 4050
+Text GLabel 2100 3900 2    50   Input ~ 0
+PA28
+Text GLabel 2100 4050 2    50   Input ~ 0
+PA29
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60471B2A
+P 1700 4700
+F 0 "SW1" H 1700 4985 50  0000 C CNN
+F 1 "SW_Push" H 1700 4894 50  0000 C CNN
+F 2 "mybays_connector:turtlekey" H 1700 4900 50  0001 C CNN
+F 3 "~" H 1700 4900 50  0001 C CNN
+	1    1700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 60473475
+P 1850 5300
+F 0 "J3" H 1930 5292 50  0000 L CNN
+F 1 "Conn_01x02" H 1930 5201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 1850 5300 50  0001 C CNN
+F 3 "~" H 1850 5300 50  0001 C CNN
+	1    1850 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 60474E31
+P 1600 5450
+F 0 "#PWR0132" H 1600 5200 50  0001 C CNN
+F 1 "GND" H 1605 5277 50  0000 C CNN
+F 2 "" H 1600 5450 50  0001 C CNN
+F 3 "" H 1600 5450 50  0001 C CNN
+	1    1600 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5450 1600 5400
+Wire Wire Line
+	1600 5400 1650 5400
+Wire Wire Line
+	1550 5300 1650 5300
+Text GLabel 1550 5300 0    50   Input ~ 0
+PA25
+$EndSCHEMATC
